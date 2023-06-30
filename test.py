@@ -4,12 +4,16 @@ import re
 
 results = []
 
-res = requests.get('https://thuvienphapluat.vn/hoi-dap-phap-luat/839CE5A-hd-dat-phi-nong-nghiep-khac-co-xay-nha-o-duoc-khong.html')
+res = requests.get('https://thuvienphapluat.vn/hoi-dap-phap-luat/bat-dong-san?page=1')
 soup = BeautifulSoup(res.content, 'html.parser')
-questions = soup.select('p')
+element = soup.select('.news-card')
 
-
-for i in questions:
-    if re.search(r'Như vậy',i.text):
-        print(i.text)
-
+for e in element:
+    question = e.find('a')
+    link_answer = question['href']
+    print(link_answer)
+    keywords = []
+    keyword = e.select('.keyword')
+    for k in keyword:
+        keywords.append(k.text)
+    

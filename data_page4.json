@@ -1,78 +1,135 @@
 [
     {
         "question": "Đất giao không đúng thẩm quyền có bị Nhà nước thu hồi đất theo quy định của pháp luật? Đất giao không đúng thẩm quyền có được bồi thường khi bị thu hồi đất không?",
-        "answer": "Như vậy, thu hồi đất là việc Nhà nước quyết định thu lại quyền sử dụng đất của người được Nhà nước trao quyền sử dụng đất hoặc thu lại đất của người sử dụng đất khi có vi phạm pháp luật về đất đai."
+        "answer": "Như vậy, thu hồi đất là việc Nhà nước quyết định thu lại quyền sử dụng đất của người được Nhà nước trao quyền sử dụng đất hoặc thu lại đất của người sử dụng đất khi có vi phạm pháp luật về đất đai.",
+        "keywords": [
+            "Thu hồi đất"
+        ]
     },
     {
         "question": "Mẫu Đơn xin giao đất, cho thuê đất mới nhất 2023? Có được giao đất không thông qua đấu giá đối với trường hợp sống tại vùng đặc biệt khó khăn hay không?",
-        "answer": "Như vậy, đối với trường hợp hộ gia đình, cá nhân sống tại vùng đặc biệt khó khăn mà chưa có đất ở và chưa được Nhà nước giao đất ở thì sẽ được giao đất ở mà không thông qua đấu giá quyền sử dụng đất."
+        "answer": "Như vậy, đối với trường hợp hộ gia đình, cá nhân sống tại vùng đặc biệt khó khăn mà chưa có đất ở và chưa được Nhà nước giao đất ở thì sẽ được giao đất ở mà không thông qua đấu giá quyền sử dụng đất.",
+        "keywords": [
+            "Cho thuê đất"
+        ]
     },
     {
         "question": "Mẫu hợp đồng môi giới bất động sản mới nhất 2023? Điều kiện để kinh doanh dịch vụ môi giới bất động sản là gì?",
-        "answer": ""
+        "answer": "",
+        "keywords": [
+            "Môi giới bất động sản"
+        ]
     },
     {
         "question": "Mua nhà ở xã hội bao lâu thì được bán lại? Điều kiện để được mua nhà ở xã hội là gì?",
-        "answer": "Như vậy, người mua, thuê mua nhà ở xã hội chỉ được phép chuyển nhượng lại nhà ở trong thời hạn tối thiểu 05 năm kể từ thời điểm hoàn tất thanh toán toàn bộ tiền mua, thuê mua nhà ở đó"
+        "answer": "Như vậy, người mua, thuê mua nhà ở xã hội chỉ được phép chuyển nhượng lại nhà ở trong thời hạn tối thiểu 05 năm kể từ thời điểm hoàn tất thanh toán toàn bộ tiền mua, thuê mua nhà ở đó",
+        "keywords": [
+            "Nhà ở xã hội"
+        ]
     },
     {
         "question": "Mẫu hợp đồng mua bán nhà ở xã hội mới nhất 2023?",
-        "answer": "Như vậy, bán nhà ở xã hội có sẵn hoặc nhà ở xã hội hình thành trong tương lai được chủ đầu tư dự án xây dựng nhà ở xã hội được lựa chọn hình thức bán, cho thuê mua nhà ở hình thành trong tương lai hoặc bán nhà ở có sẵn."
+        "answer": "Như vậy, bán nhà ở xã hội có sẵn hoặc nhà ở xã hội hình thành trong tương lai được chủ đầu tư dự án xây dựng nhà ở xã hội được lựa chọn hình thức bán, cho thuê mua nhà ở hình thành trong tương lai hoặc bán nhà ở có sẵn.",
+        "keywords": [
+            "Mua bán nhà ở xã hội"
+        ]
     },
     {
         "question": "Có những mô hình ban quản trị nhà chung cư nào? Chung cư có bắt buộc phải thành lập ban quản trị không?",
-        "answer": ""
+        "answer": "",
+        "keywords": [
+            "Ban quản trị nhà chung cư"
+        ]
     },
     {
         "question": "Hướng dẫn thủ tục cấp lại Giấy chứng nhận quyền sử dụng đất bị mất thực hiện tại cấp tỉnh nơi chưa thành lập Văn phòng đăng ký đất đai? ",
-        "answer": ""
+        "answer": "",
+        "keywords": [
+            "Giấy chứng nhận quyền sử dụng đất"
+        ]
     },
     {
         "question": "Nhận thừa kế bất động sản có cần phải nộp thuế không? Nhận thừa kế bất động sản cần nộp những loại phí nào?",
-        "answer": ""
+        "answer": "",
+        "keywords": [
+            "Bất động sản"
+        ]
     },
     {
         "question": "Mẫu hợp đồng thế chấp sổ đỏ mới nhất 2023? Người sử dụng đất có được thế chấp sổ đỏ cho cá nhân khác không phải là tổ chức tín dụng không?",
-        "answer": "Như vậy, việc đăng ký thế chấp sổ đỏ thuộc thẩm quyền của Văn phòng đất đai. Do đó trường hợp người sử dụng đất muốn đăng ký thế chấp sổ đỏ thì cần đến Văn phòng đất đai để làm các thủ tục cần thiết."
+        "answer": "Như vậy, việc đăng ký thế chấp sổ đỏ thuộc thẩm quyền của Văn phòng đất đai. Do đó trường hợp người sử dụng đất muốn đăng ký thế chấp sổ đỏ thì cần đến Văn phòng đất đai để làm các thủ tục cần thiết.",
+        "keywords": [
+            "Sổ đỏ"
+        ]
     },
     {
         "question": "Thu hồi đất nông nghiệp của hộ gia đình làm khu dân cư thì bồi thường như thế nào?",
-        "answer": "Như vậy, các trường hợp Nhà nước thực hiện thu hồi đất là:"
+        "answer": "Như vậy, các trường hợp Nhà nước thực hiện thu hồi đất là:",
+        "keywords": [
+            "Thu hồi đất"
+        ]
     },
     {
         "question": "Mẫu hợp đồng chuyển đổi QSDĐ mới nhất 2023? Có được chuyển đổi quyền sử dụng đất nông nghiệp khác xã, phường của hộ gia đình, cá nhân không?",
-        "answer": "Như vậy, hộ gia đình cá nhân chỉ được phép chuyển đổi quyền sử dụng đất nông nghiệp trong cùng xã phường của mình."
+        "answer": "Như vậy, hộ gia đình cá nhân chỉ được phép chuyển đổi quyền sử dụng đất nông nghiệp trong cùng xã phường của mình.",
+        "keywords": [
+            "Chuyển đổi quyền sử dụng đất"
+        ]
     },
     {
         "question": "Những đối tượng được mua nhà ở xã hội mới nhất năm 2023?",
-        "answer": "Như vậy, nhà ở xã hội là nhà ở có sự hỗ trợ của Nhà nước cho các đối tượng được hưởng chính sách hỗ trợ về nhà ở."
+        "answer": "Như vậy, nhà ở xã hội là nhà ở có sự hỗ trợ của Nhà nước cho các đối tượng được hưởng chính sách hỗ trợ về nhà ở.",
+        "keywords": [
+            "Nhà ở xã hội"
+        ]
     },
     {
         "question": "Sử dụng nhà chung cư gây thấm, dột tại khu vực không thuộc quyền sử dụng của mình bị phạt bao nhiêu tiền?",
-        "answer": "Như vậy, có thể thấy, nhà chung cư là một dạng nhà để ở, có từ 2 tầng trở lên, có nhiều căn hộ, có lối đi, cầu thang chung, có phần sở hữu riêng, phần sở hữu chung và hệ thống công trình hạ tầng sử dụng chung."
+        "answer": "Như vậy, có thể thấy, nhà chung cư là một dạng nhà để ở, có từ 2 tầng trở lên, có nhiều căn hộ, có lối đi, cầu thang chung, có phần sở hữu riêng, phần sở hữu chung và hệ thống công trình hạ tầng sử dụng chung.",
+        "keywords": [
+            "Thời hạn sử dụng nhà chung cư"
+        ]
     },
     {
         "question": "Hồ sơ gia hạn sử dụng đất ngoài khu công nghệ cao, khu kinh tế bao gồm giấy tờ nào?",
-        "answer": "Như vậy, các đối tượng phải thực hiện thủ tục gia hạn sử dụng đất ngoài khu công nghệ cao, khu kinh tế bao gồm:"
+        "answer": "Như vậy, các đối tượng phải thực hiện thủ tục gia hạn sử dụng đất ngoài khu công nghệ cao, khu kinh tế bao gồm:",
+        "keywords": [
+            "Gia hạn sử dụng đất"
+        ]
     },
     {
         "question": "Có thể vừa nộp hồ sơ thừa kế đồng thời với hợp đồng tặng cho quyền sử dụng đất của người thừa kế cho người khác không? ",
-        "answer": ""
+        "answer": "",
+        "keywords": [
+            "Quyền sử dụng đất"
+        ]
     },
     {
         "question": "Thủ tục đăng ký chuyển mục đích sử dụng đất không phải xin phép cơ quan nhà nước có thẩm quyền được tiến hành như thế nào?",
-        "answer": "Như vậy, việc cho phép chuyển mục đích sử dụng đất được thực hiện dựa trên 2 căn cứ:"
+        "answer": "Như vậy, việc cho phép chuyển mục đích sử dụng đất được thực hiện dựa trên 2 căn cứ:",
+        "keywords": [
+            "Chuyển mục đích sử dụng đất"
+        ]
     },
     {
         "question": "Mua nhà chung cư sau 50 năm sẽ thế nào? Nhà chung cư giao dịch cần điều kiện gì?",
-        "answer": "Như vậy, theo quy định của pháp luật điều kiện mua bán nhà chung cư là: "
+        "answer": "Như vậy, theo quy định của pháp luật điều kiện mua bán nhà chung cư là: ",
+        "keywords": [
+            "Thời hạn sử dụng nhà chung cư"
+        ]
     },
     {
         "question": "Để bán được nhà chung cư chưa có sổ hồng thì người bán bắt buộc phải có biên bản bàn giao căn hộ và hợp đồng mua bán với chủ đầu tư không? ",
-        "answer": "Như vậy, nhà chung cư là nhà ở thương mại và để bán được nhà chung cư chưa có sổ hồng thì người bán bắt buộc phải có biên bản bàn giao căn hộ và hợp đồng mua bán với chủ đầu tư."
+        "answer": "Như vậy, nhà chung cư là nhà ở thương mại và để bán được nhà chung cư chưa có sổ hồng thì người bán bắt buộc phải có biên bản bàn giao căn hộ và hợp đồng mua bán với chủ đầu tư.",
+        "keywords": [
+            "Nhà chung cư"
+        ]
     },
     {
         "question": "Người dân được bố trí tái định cư thế nào khi bị thu hồi đất? Tiền sử dụng đất tại nơi tái định cư được tính như thế nào?",
-        "answer": "Như vậy, người dân được bố trí tái định cư khi bị thu hồi đất tại chỗ nếu tại khu vực thu hồi đất có dự án tái định cư hoặc có điều kiện bố trí tái định cư."
+        "answer": "Như vậy, người dân được bố trí tái định cư khi bị thu hồi đất tại chỗ nếu tại khu vực thu hồi đất có dự án tái định cư hoặc có điều kiện bố trí tái định cư.",
+        "keywords": [
+            "Bồi thường khi thu hồi đất"
+        ]
     }
 ]
