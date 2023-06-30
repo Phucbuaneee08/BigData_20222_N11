@@ -57,7 +57,7 @@ def main():
     # Tạo một Lock để đồng bộ hóa việc ghi file
     file_lock = threading.Lock()
 
-    for i in range(1, 5):  # Bắt đầu từ trang thứ 1
+    for i in range(1, 400):  # Bắt đầu từ trang thứ 1
         thread = threading.Thread(target=lambda page=i: save_page_results(page, file_lock))
         thread.start()
         threads.append(thread)
