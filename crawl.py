@@ -51,8 +51,8 @@ def process_page(page):
 
 def main():
     threads = []
-    num_pages = 5
-    num_threads = 5  # Số luồng mong muốn
+    num_pages = 400
+    num_threads = 6  # Số luồng mong muốn
 
     # Tạo một Lock để đồng bộ hóa việc ghi file
     file_lock = threading.Lock()
