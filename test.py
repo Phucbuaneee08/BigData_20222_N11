@@ -4,16 +4,19 @@ import re
 
 results = []
 
-res = requests.get('https://thuvienphapluat.vn/hoi-dap-phap-luat/bat-dong-san?page=1')
-soup = BeautifulSoup(res.content, 'html.parser')
-element = soup.select('.news-card')
+def remove_html_tags(text):
+    soup = BeautifulSoup(text, 'html.parser')
+    return soup.get_text()
 
-for e in element:
-    question = e.find('a')
-    link_answer = question['href']
-    print(link_answer)
-    keywords = []
-    keyword = e.select('.keyword')
-    for k in keyword:
-        keywords.append(k.text)
+res = requests.get('https://thuvienphapluat.vn/hoi-dap-phap-luat/839CEF7-hd-giao-vien-thuoc-doi-tuong-duoc-thue-nha-cong-vu-khong.html')
+soup = BeautifulSoup(res.text, 'html.parser')
+elements = soup.select('.news-content')
+html = str(elements)
+html = remove_html_tags(html)
+html = html.replace("\n", "")
+html = html.replace("\r", "")
+html = html.replace("  ", "")
+print(html.strip())
+
+
     

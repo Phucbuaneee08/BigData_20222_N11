@@ -4,6 +4,10 @@ import re
 import json
 import threading
 
+def remove_html_tags(text):
+    soup = BeautifulSoup(text, 'html.parser')
+    return soup.get_text()
+
 def process_page(page):
     results = []
     base_link = 'https://thuvienphapluat.vn/hoi-dap-phap-luat/bat-dong-san?page='
@@ -19,14 +23,13 @@ def process_page(page):
             keywords.append(k['title'])
         link_answer = question['href']
         res2 = requests.get(link_answer)
-        soup2 = BeautifulSoup(res2.content, 'html.parser')
-        questions = soup2.select('p')
-        answer = '' 
-        for i in questions:
-            if re.search(r'Như vậy', i.text):
-                answer = i.text
-                break
-
+        soup2 = BeautifulSoup(res2.text, 'html.parser')
+        answer = soup2.select('.news-content')
+        answer = str(answer)
+        answer = remove_html_tags(answer)
+        answer = answer.replace("\n", "")
+        answer = answer.replace("  ", "")
+        answer = answer.replace("\r", "")
         results.append({'question': question['title'], 'answer': answer, 'keywords': keywords})
     return results
 
@@ -51,13 +54,13 @@ def process_page(page):
 
 def main():
     threads = []
-    num_pages = 400
+    num_pages = 6
     num_threads = 6  # Số luồng mong muốn
 
     # Tạo một Lock để đồng bộ hóa việc ghi file
     file_lock = threading.Lock()
 
-    for i in range(1, 400):  # Bắt đầu từ trang thứ 1
+    for i in range(1, 6):  # Bắt đầu từ trang thứ 1
         thread = threading.Thread(target=lambda page=i: save_page_results(page, file_lock))
         thread.start()
         threads.append(thread)
