@@ -15,6 +15,9 @@ def process_page(page):
     soup = BeautifulSoup(res.content, 'html.parser')
     element = soup.select('.news-card')
 
+    if not element:
+        return results  # Kết thúc nếu không có dữ liệu trên trang
+
     for e in element:
         question = e.find('a')
         keywords = []
@@ -33,37 +36,26 @@ def process_page(page):
         results.append({'question': question['title'], 'answer': answer, 'keywords': keywords})
     return results
 
-    # return results
-    # questions = soup.select('.news-card > a')
-    
-    # for question in questions:
-    #     link_answer = question['href']
-    #     res2 = requests.get(link_answer)
-    #     soup2 = BeautifulSoup(res2.content, 'html.parser')
-
-    #     questions = soup2.select('p')
-    #     answer = '' 
-    #     for i in questions:
-    #         if re.search(r'Như vậy', i.text):
-    #             answer = i.text
-    #             break
-
-    #     results.append({'question': question['title'], 'answer': answer})
-
-    # return results
-
 def main():
-    threads = []
-    num_pages = 6
     num_threads = 6  # Số luồng mong muốn
 
     # Tạo một Lock để đồng bộ hóa việc ghi file
     file_lock = threading.Lock()
 
-    for i in range(1, 6):  # Bắt đầu từ trang thứ 1
-        thread = threading.Thread(target=lambda page=i: save_page_results(page, file_lock))
+    page = 1  # Bắt đầu từ trang đầu tiên
+    while True:
+        threads = []
+
+        results = process_page(page)
+
+        if not results:
+            break  # Kết thúc nếu không có dữ liệu trên trang
+
+        thread = threading.Thread(target=lambda page=page: save_page_results(page, results, file_lock))
         thread.start()
         threads.append(thread)
+
+        page += 1
 
         # Điều chỉnh số lượng luồng nếu vượt quá giới hạn
         if len(threads) >= num_threads:
@@ -74,17 +66,16 @@ def main():
     for thread in threads:
         thread.join()
 
-    print("Loading...100%  DONE")
+    print("Crawling completed.")
 
-def save_page_results(page, file_lock):
-    results = process_page(page)
+def save_page_results(page, results, file_lock):
     file_name = f'data_page{page}.json'
     with open(file_name, 'w', encoding='utf-8') as file:
         # Sử dụng Lock để đảm bảo chỉ có một luồng ghi file tại một thời điểm
         file_lock.acquire()
         json.dump(results, file, ensure_ascii=False, indent=4)
         file_lock.release()
-    print("Cloning Page "+ str(page)+" Successfully")
+    print("Crawling Page " + str(page) + " Successfully")
 
 if __name__ == "__main__":
     main()
